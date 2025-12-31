@@ -1,0 +1,57 @@
+multi file project // FAIRY WORLD TEXT INTERATION GAME
+
+header file
+
+1. include headers
+2. define constants
+3. declare function
+
+main scource file 
+
+BEGIN 
+    input player name
+    initialize variables (stamina, rations, health, leaguesToCastle, magicDust)
+    start message
+    difficulty menu
+    input player difficulty choice
+    IF choice 1 then easy 
+    ELSE IF 2 then medium
+    ELSE IF 3 then hard
+    ELSE error message
+
+    REPEAT
+        take choice with input validation
+
+        display menu
+        in SWITCH CASE, call functions according to menu choice
+
+        win-lose logic 
+        IF leaguesToCastle <= 0 then win
+        ELSE IF resources = 0 then lose
+        ELSE contiune
+
+    UNTIL (player wants to continue)
+END
+
+functions source file 
+
+treking features
+
+1.treking formula, -stamina -rations -distance to castle
+2.forage for resources, random event (0-3), -5 stamina
+    event 0 = +10 dust
+    event 1 = -10 health
+    event 2 = -10 rations
+    event 3 = +10 rations
+3.healing for health stat, IF dust >= 15 then +100 health and -15 dust ELSE not healed
+4.trading for rations, IF dust >= 5 then +15 rations and -5 dust ELSE not traded
+
+additional features
+
+1. input validation
+2. display status report
+3. save game stats (using save file function)
+4. load game stats (using load file function)
+5. help and instructions to explain game
+
+
